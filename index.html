@@ -7,9 +7,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-        <!-- Skripts: bootstrap, jquery, popper-->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!-- Skripts: jquery (must be before boostrap), bootstrap, , popper-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <link rel="stylesheet" href="css/style.css">
 
@@ -26,7 +26,8 @@
 
         <header>
   <div class="row">
-  <img id="LogoImage" src="./images/MayekawaPeglowLogoCut.jpg" class="mx-auto d-block"
+      <!-- to make centered use class="mx-auto d-block" -->
+  <img id="LogoImage" src="./images/MayekawaPeglowLogoCut.jpg" class="d-block"
   alt="Mayekawa Peglow">
   </div>
 
@@ -39,9 +40,9 @@
  </div>
 -->
 </header>
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark" id="">
   <!-- Brand -->
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">Menü</a>
 
   <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -51,14 +52,17 @@
   <!-- Navbar links -->
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Reparaturwerk</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Kärcher</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Kirsch</a>
       </li>
     </ul>
   </div>
@@ -67,7 +71,14 @@
 
     <main></main>
 
-    <footer></footer>
+    <footer class="row">
+    <div class="marquee">
+        <p>
+        <b>Mitarbeiter gesucht. Zur Verstärkung unseres Teams suchen wir Elektromaschinenbauer.
+        Rufen Sie uns an.</b>
+        </p>
+    </div>
+</footer>
 
     </body>
 

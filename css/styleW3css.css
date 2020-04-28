@@ -22,12 +22,21 @@ body {
     font-size:32px;
   }
 
-#LogoImage {
+  #Bereiche .w3-third .w3-card  {
+    background-color: rgba(30, 135, 228, 0.726);
+    min-height:450px
+  }
+
+  .peglowDetails {
+    background-color: rgba(30, 135, 228, 0.66);
+  }
+
+  #LogoImage {
     display: block;
-    margin-left: 2rem;
-    /*margin-right: auto;*/
+    margin-left: auto;
+    margin-right: auto;
     width:60%;
-    max-width:256px
+    max-width:300px
   }
 
 
@@ -50,6 +59,7 @@ body {
     100% { transform: translate(-100%, 0); }
   }
 
-  .peglowDetails {
-    background-color: rgba(30, 135, 228, 0.66);
-  }
+ /*  p {
+    font-family: verdana;
+    font-size: 20px;
+  } */
