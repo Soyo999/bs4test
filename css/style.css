@@ -29,17 +29,16 @@ body {
 
 #LogoImage {
     display: block;
-    margin-left: 2rem;
+    margin-left: 1rem;
     /*margin-right: auto;*/
-    width:50%;
-    max-width:256px
+    /*width:50%;*/
+    /*max-width:256px*/
   }
 
 .headerLogo{
     display: block;
-    margin-left: 2rem;
+    /*margin-left: 0.5rem;*/
     /*margin-right: auto;*/
-    width:50%;
     max-width:256px
   }
 
