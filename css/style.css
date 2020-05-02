@@ -12,9 +12,11 @@ body {
     text-decoration:none;
   }
 
+/*
   a h3{
     text-decoration:underline;
   }
+*/
 
 .card a {
     text-decoration:none;
@@ -69,9 +71,11 @@ body {
   /*text-decoration:underline;*/
 }
 
+/* did work on kaercher.html
 .box-shadow-hover h5 :hover{
   text-decoration:underline;
 }
+*/
 
   .marquee {
     width: 100%auto;
