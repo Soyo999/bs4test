@@ -13,7 +13,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- placeholder for images -->
@@ -44,42 +43,6 @@
 
             </div>
         </div>
-
-        <div class="container justify-content-center" style="background-color: white; max-height: 1000px;">
-            <div class="row " style="background-color: white;">
-                <!-- to make centered use class="mx-auto d-block"
-                <img id="LogoImage" src="./images/MayekawaPeglowLogoCut.jpg" class="d-block"
-                     alt="Mayekawa Peglow"> -->
-                <div class="col-sm-12  h-100">
-                    <div itemscope itemtype="http://schema.org/LocalBusiness">
-                      <h1 itemprop="name" hidden>Mayekawa Peglow</h1>
-                        <i class="material-icons" style="font-size:1em">phone</i>
-                        <span itemprop="telephone">
-                              <a href="tel:++4954263840">
-                                 +49 54 26 / 38 40
-                              </a>
-                        </span>
-                        <i class="material-icons" style="font-size:1em">email</i>
-                        <a href="mailto:info@peglow.de" itemprop="email">
-                            info@peglow.de</a>
-                        <i class="material-icons" style="font-size:1em">location_on</i>
-                        <a href="https://goo.gl/maps/YWuSiRL6RK6N5k5a6">Anfahrt</a>
-                    </div>
-
-                </div>
-                <div class="col-sm-0 ">
-                   <!--
-                    <div itemscope itemtype="http://schema.org/LocalBusiness">
-                      <h1 itemprop="name" hidden>Mayekawa Peglow</h1>
-                        <i class="material-icons" style="font-size:1em">email</i>
-                        <a href="mailto:info@peglow.de" itemprop="email">
-                            info@peglow.de</a>
-                    </div>
-                    -->
-                </div>
-                </div>
-
-            </div>
 
         <!--
 <div class="w3-bar w3-black">
@@ -122,15 +85,22 @@
     </nav>
     <main class="container-fluid">
 
+    <div>
+        <form class="default" name="searchRoute" method="get" action="https://maps.google.de/" target="_blank" accept-charset="UTF-8">                    <fieldset>                        <input name="saddr" type="text" id="saddr" placeholder="Ihre Startadresse">                        <input name="daddr" type="hidden" id="daddr" value="Waterstroate 20 Warendorf">                        <button name="submit" type="submit" id="submit">Route berechnen</button>                    </fieldset>                </form>
+    </div>
+
+
         <div class="container" style="width:80%;margin:auto;">
             <div class="card box-shadow-hover peglowDetails">
                 <div class="card-body">
-                    <h3 class="card-title">
-                            Impressum
-                    </h3>
+                    <h5 class="card-title">
+                        Impressum
+                    </h5>
                     <p class="card-text">
-                        <div class='impressum'>
-                            <p>Angaben gemäß § 5 TMG</p>
+                        Tel.: 0 54 26 / 38 40
+                        <a href="mailto:info@peglow.de">Mail</a>
+                        <div class="bs-docs-section">
+                            <h1 id="kontakt">Kontaktinformationen</h1>
                             <address>
                                 <strong>Mayekawa Peglow</strong><br>
                                 Elektromaschinebau - Antriebstechnik
@@ -139,12 +109,22 @@
                                 <abbr title="Telefonnummer">Tel.</abbr> +49 54 26 / 38 40<br>
                                 <abbr title="Email-Adresse">Email</abbr> <a href="mailto:info@peglow.de">Email senden</a>
                             </address>
+                        </div>
+
+                        <div class='impressum'>
+                            <h1>Impressum</h1>
+                            <p>Angaben gemäß § 5 TMG</p>
+                            <p>Max Muster <br>
+                                Musterweg<br>
+                                12345 Musterstadt <br>
+                            </p>
                             <p> <strong>Vertreten durch: </strong><br>
                                 Max Muster<br>
                             </p>
                             <p><strong>Kontakt:</strong> <br>
-                                <abbr title="Telefonnummer">Tel.</abbr> +49 54 26 / 38 40<br>
-                                <abbr title="Email-Adresse">Email</abbr> <a href="mailto:info@peglow.de">info@peglow.de</a>
+                                Telefon: 01234-789456<br>
+                                Fax: 1234-56789<br>
+                                E-Mail: <a href='mailto:max@muster.de'>max@muster.de</a></br></p>
                             <p><strong>Registereintrag: </strong><br>
                                 Eintragung im Registergericht: Musterstadt<br>
                                 Registernummer: 12345<br></p>
@@ -160,16 +140,18 @@
                                 Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. <br>
                                 Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.<br>
                             </p><br>
-                            Impressum vom <a href="https://www.impressum-generator.de">Impressum Generator</a> der <a href="https://www.kanzlei-hasselbach.de/standorte/bonn/">Kanzlei Hasselbach, Bonn</a>
+                            Impressum vom <a href="https://www.impressum-generator.de">Impressum Generator</a> der
+                            <a href="https://www.kanzlei-hasselbach.de/standorte/bonn/">Kanzlei Hasselbach, Bonn</a>
                         </div>
 
-                    </p>
 
                 </div>
 
             </div>
         </div>
     </main>
+
+
     <footer class="row">
         <div class="marquee">
             <p>
@@ -182,3 +164,150 @@
 </body>
 
 </html>
+
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+
+  <div style="background-color: #6351ce;">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0">Get connected with us on social networks!</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter white-text mr-4"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram white-text"> </i>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Company name</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+          consectetur
+          adipisicing elit.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Products</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">MDBootstrap</a>
+        </p>
+        <p>
+          <a href="#!">MDWordPress</a>
+        </p>
+        <p>
+          <a href="#!">BrandFlow</a>
+        </p>
+        <p>
+          <a href="#!">Bootstrap Angular</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">Your Account</a>
+        </p>
+        <p>
+          <a href="#!">Become an Affiliate</a>
+        </p>
+        <p>
+          <a href="#!">Shipping Rates</a>
+        </p>
+        <p>
+          <a href="#!">Help</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+        <p>
+          <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
