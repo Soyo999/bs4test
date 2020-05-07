@@ -99,3 +99,10 @@ body {
   .peglowDetails {
     background-color: rgba(30, 135, 228, 0.66);
   }
+
+
+/*fix safari rows maybe? not necassary now
+row:before, row:after{
+    display: inline-block !Important;
+}
+*/
